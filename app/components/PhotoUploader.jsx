@@ -7,7 +7,7 @@ export default function PhotoUploader(){
     const [uploading, setUploading] = useState(false);
     const router = useRouter()
 
-    async function handleFileUpload(event: any){
+    async function handleFileUpload(event){
         try {
             setUploading(true);
 

@@ -12,7 +12,7 @@ export default function AuthForm(){
     const [isSigningUp, setIsSigningUp] = useState(false)
     const router = useRouter()
 
-    async function handleLogin(e: React.FormEvent){
+    async function handleLogin(e){
         e.preventDefault();
         setIsSigningIn(true)
         const {data, error} = await supabase.auth.signInWithPassword({
@@ -26,7 +26,7 @@ export default function AuthForm(){
         }
     }
 
-    async function handleSignUp(e: React.FormEvent){
+    async function handleSignUp(e){
         e.preventDefault();
         const {data, error} = await supabase.auth.signUp({
             email,
@@ -73,7 +73,7 @@ export default function AuthForm(){
             <p className="text-center text-white">
                 {isNewUser ? (
                 <>
-                    Already have an account? {' '}
+                    Already have an account?
                     <button
                     type="button"
                     onClick={() => setIsNewUser(false)}
@@ -84,7 +84,7 @@ export default function AuthForm(){
                 </>
                 ) : (
                 <>
-                    Don't have an account? {' '}
+                    Don't have an account?
                     <button
                     type="button"
                     onClick={() => setIsNewUser(true)}

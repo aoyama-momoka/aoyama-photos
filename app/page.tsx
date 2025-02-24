@@ -6,7 +6,7 @@ export default function Home() {
     <div className="bg-gray-700 rounded-lg shadow-lg p-6 w-full max-w-lg">
       <h2 className="text-white text-2xl font-bold mb-4 text-center">Welcome to Aoyama Photos</h2>
       <p className="mb-6 text-lg text-center">
-        Sign in to upload and save your favorite photos.
+        サインインしてお気に入りの写真をアップロード・保存しましょう
       </p>
       <AuthForm />
     </div>

@@ -46,7 +46,7 @@ export default function AuthForm(){
         signInMessage = 'Sign Up'
     }
 
-    const signUpMessage = <p className="text-center text-white">Email sent! Check your email to confirm sign up.</p>
+    const signUpMessage = <p className="text-center text-white">メールが送信されました！登録確認のメールをご確認ください。</p>
 
     return (
         <form onSubmit={isNewUser ? handleSignUp : handleLogin} className="space-y-8">
@@ -73,7 +73,7 @@ export default function AuthForm(){
             <p className="text-center text-white">
                 {isNewUser ? (
                 <>
-                    Already have an account?
+                    すでにアカウントをお持ちですか？
                     <button
                     type="button"
                     onClick={() => setIsNewUser(false)}
@@ -84,7 +84,7 @@ export default function AuthForm(){
                 </>
                 ) : (
                 <>
-                    Don't have an account?
+                    アカウントをお持ちでないですか？
                     <button
                     type="button"
                     onClick={() => setIsNewUser(true)}

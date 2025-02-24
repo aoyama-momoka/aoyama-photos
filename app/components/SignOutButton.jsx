@@ -5,7 +5,7 @@ export default function SignOutButton(){
             type="submit"
             className="bg-gray-700 text-white font-bold py-2 px-4 rounded hover:bg-gray-600"
             >
-                Sign Out
+                サインアウト
             </button>
         </form>
     )
